@@ -4,7 +4,7 @@
 */
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-sans-serif: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -33,6 +33,9 @@ $oil         : #333333;
 $jet         : #222222;
 $black       : #000000;
 
+// Diverse Custom Colours
+$dwblue      : #2c7eae;
+
 // We use these as default colors throughout
 $primary-color: #008CBA;
 $secondary-color: #e7e7e7;
@@ -43,25 +46,31 @@ $info-color: #a0d3e8;
 
 // We use these to control various global styles
 $body-bg: $white;
-$body-font-color: $jet;
+$body-font-color: $oil;
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
 $header-font-weight: 300;
 $header-text-rendering: optimizeLegibility;
 
+
+// Diverse Topbar
+$topbar-height: rem-calc(100);
+$topbar-bg-color: $white;
+
 // Set the link colors and styles for top-level nav
 $topbar-link-weight: bold;
-$topbar-link-color: $white;
-$topbar-link-color-hover: $white;
-$topbar-link-color-active: $white;
-$topbar-link-color-active-hover: $white;
+$topbar-link-color: $jet;
+$topbar-link-color-hover: $dwblue;
+$topbar-link-color-active: $dwblue;
+$topbar-link-color-active-hover: $dwblue;
+$topbar-link-padding: rem-calc(15) !default;
 
 //$topbar-link-bg: $topbar-bg;
-$topbar-link-bg-hover: $jet;
-$topbar-link-bg-color-hover: $jet;
-$topbar-link-bg-active: $jet;
-$topbar-link-bg-active-hover: scale-color($jet, $lightness: -14%);
+$topbar-link-bg-hover: $ghost;
+$topbar-link-bg-color-hover: $ghost;
+$topbar-link-bg-active: $white;
+$topbar-link-bg-active-hover: scale-color($white, $lightness: -14%);
 
 // Media query breakpoints
 $small-breakpoint:  em-calc(640);
