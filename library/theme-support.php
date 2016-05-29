@@ -2,8 +2,7 @@
 /**
  * Register theme support for languages, menus, post-thumbnails, post-formats etc.
  *
- * @package WordPress
- * @subpackage FoundationPress
+ * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
 
@@ -11,6 +10,15 @@ if ( ! function_exists( 'foundationpress_theme_support' ) ) :
 function foundationpress_theme_support() {
 	// Add language support
 	load_theme_textdomain( 'foundationpress', get_template_directory() . '/languages' );
+
+	// Switch default core markup for search form, comment form, and comments to output valid HTML5
+	add_theme_support( 'html5', array(
+		'search-form',
+		'comment-form',
+		'comment-list',
+		'gallery',
+		'caption',
+	) );
 
 	// Add menu support
 	add_theme_support( 'menus' );
@@ -33,4 +41,3 @@ function foundationpress_theme_support() {
 
 add_action( 'after_setup_theme', 'foundationpress_theme_support' );
 endif;
-?>

@@ -2,8 +2,7 @@
 /**
  * Protocol Relative Theme Assets
  *
- * @package WordPress
- * @subpackage FoundationPress
+ * @package FoundationPress
  * @since FoundationPress 1.1.0
  */
 
@@ -87,7 +86,5 @@ if ( ! class_exists( 'Foundationpress_protocol_relative_theme_assets' ) ) :
 		}
 	}
 
-	$Foundationpress_protocol_relative_theme_assets = new Foundationpress_protocol_relative_theme_assets;
+	$foundationpress_protocol_relative_theme_assets = new Foundationpress_protocol_relative_theme_assets;
 endif;
-
-?>
